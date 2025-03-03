@@ -2,4 +2,52 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    // Red
+    <color name="red_50">#feedee</color>
+    <color name="red_100">#fbc7ca</color>
+    <color name="red_200">#f9acb1</color>
+    <color name="red_300">#f6868d</color>
+    <color name="red_400">#f46e77</color>
+    <color name="red_500">#f14a55</color>
+    <color name="red_600">#db434d</color>
+    <color name="red_700">#ab353c</color>
+    <color name="red_800">#85292f</color>
+    <color name="red_900">#651f24</color>
+
+    // Grey
+    <color name="grey_50">#eeeeee</color>
+    <color name="grey_100">#cccccc</color>
+    <color name="grey_200">#b3b3b3</color>
+    <color name="grey_300">#909090</color>
+    <color name="grey_400">#7a7a7a</color>
+    <color name="grey_500">#595959</color>
+    <color name="grey_600">#515151</color>
+    <color name="grey_700">#3f3f3f</color>
+    <color name="grey_800">#313131</color>
+    <color name="grey_900">#252525</color>
+
+    // Blue
+    <color name="blue_50">#ecf0f3</color>
+    <color name="blue_100">#c5cfdb</color>
+    <color name="blue_200">#a9b8ca</color>
+    <color name="blue_300">#8298b1</color>
+    <color name="blue_400">#6a84a2</color>
+    <color name="blue_500">#45658b</color>
+    <color name="blue_600">#3f5c7e</color>
+    <color name="blue_700">#314863</color>
+    <color name="blue_800">#26384c</color>
+    <color name="blue_900">#1d2a3a</color>
+
+    // Orange
+    <color name="orange_50">#fffae9</color>
+    <color name="orange_100">#fff0ba</color>
+    <color name="orange_200">#ffe898</color>
+    <color name="orange_300">#fede69</color>
+    <color name="orange_400">#fed84c</color>
+    <color name="orange_500">#fece1f</color>
+    <color name="orange_600">#e7bb1c</color>
+    <color name="orange_700">#b49216</color>
+    <color name="orange_800">#8c7111</color>
+    <color name="orange_900">#6b570d</color>
 </resources>
