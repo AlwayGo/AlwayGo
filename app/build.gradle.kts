@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.alwaygo.alwaygo"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.alwaygo.alwaygo"

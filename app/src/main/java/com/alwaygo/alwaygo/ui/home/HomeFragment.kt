@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.ui
+package com.alwaygo.alwaygo.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
