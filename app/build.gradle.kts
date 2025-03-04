@@ -88,6 +88,9 @@ dependencies {
     implementation(libs.androidx.paging.runtime.v311)
     implementation(libs.volley)
 
+    // Viewpager2
+    implementation (libs.androidx.viewpager2)
+
     // Splash screen
     implementation(libs.androidx.core.splashscreen)
 
