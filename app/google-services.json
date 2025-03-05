@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040220942090",
+    "project_id": "alwaygo-6f0af",
+    "storage_bucket": "alwaygo-6f0af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040220942090:android:754f51894b00959aa914f3",
+        "android_client_info": {
+          "package_name": "com.alwaygo.alwaygo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8GMtWVJEmldXLpY2bhLsYivgMgsVTEYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

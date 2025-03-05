@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.signup.SignUpActivity">
+    tools:context=".ui.signup.RegisterActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -47,45 +47,76 @@
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/signUpTxt">
 
-        <EditText
-            android:id="@+id/userNameText"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="22dp"
-            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             android:hint="@string/username_signup"
-            android:inputType="text" />
+            android:textColorHint="@color/grey_300"
+            app:boxBackgroundMode="none"
+            app:endIconTint="@color/grey_400"
+            app:hintTextColor="@color/blue_300">
 
-        <EditText
-            android:id="@+id/emailText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="22dp"
-            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
             android:hint="@string/email_signup"
-            android:inputType="textEmailAddress" />
+            android:textColorHint="@color/grey_300"
+            app:boxBackgroundMode="none"
+            app:endIconTint="@color/grey_400"
+            app:hintTextColor="@color/blue_300">
 
-        <EditText
-            android:id="@+id/passwordText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="22dp"
-            android:drawableEnd="@drawable/password_toggle"
-            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
             android:hint="@string/password_signup"
-            android:inputType="textVisiblePassword" />
+            android:textColorHint="@color/grey_300"
+            app:boxBackgroundMode="none"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/grey_400"
+            app:hintTextColor="@color/blue_300">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="22dp"
             android:fontFamily="@font/poppins_regular"
             android:text="@string/password_text"
@@ -95,21 +126,38 @@
         <CheckBox
             android:id="@+id/checkBoxSignUp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/checkBox_text"
             android:textSize="14sp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/blue_500"
-            android:text="@string/button_create_account" />
-
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/blue_500"
+        android:text="@string/button_create_account"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/signUpLiner" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/signUpLiner"/>
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider1"
@@ -119,7 +167,7 @@
         android:layout_marginTop="20dp"
         app:dividerColor="@color/grey_300"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/signUpLiner" />
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider2"
@@ -130,19 +178,19 @@
         android:layout_marginEnd="37dp"
         app:dividerColor="@color/grey_300"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/signUpLiner"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn"
         tools:ignore="RtlHardcoded" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/or_text_signup"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/divider1"
-        app:layout_constraintTop_toBottomOf="@id/signUpLiner" />
+        app:layout_constraintEnd_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn" />
 
     <LinearLayout
         android:id="@+id/socialMediaLiner"
@@ -162,7 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="27dp"
             android:background="@drawable/social_media_bg"
-            android:src="@drawable/facebook2" />
+            android:src="@drawable/facebook_ic" />
 
         <ImageView
             android:id="@+id/googleImageBtn"

@@ -10,4 +10,6 @@
     <string name="button_create_account">Create Account</string>
     <string name="or_text_signup">or</string>
     <string name="signup_login_text">Already have an account? <b>Login in</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

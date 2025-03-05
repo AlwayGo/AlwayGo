@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Seçili checkbox (✓ işarəsi görünsün) -->
+    <item android:state_checked="true"
+        android:state_active="false"
+        android:drawable="@drawable/done_round_light"/>
+
+    <!-- Seçilməmiş checkbox (tam ağ olsun) -->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/> <!-- Tam ağ fon -->
+            <stroke android:width="2dp" android:color="@android:color/darker_gray"/> <!-- Boz çərçivə -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+</selector>
+
+

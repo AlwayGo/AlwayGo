@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/homePage"
+        android:icon="@drawable/home_menu"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/categoryPage"
+        android:icon="@drawable/category_menu"
+        android:title="Category"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/cardPage"
+        android:icon="@drawable/card_menu"
+        android:title="Card"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/favoritePage"
+        android:icon="@drawable/favorite_menu"
+        android:title="Favorite"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/profilePage"
+        android:icon="@drawable/profile_menu"
+        android:title="Profile"
+        tools:ignore="HardcodedText" />
+
+</menu>

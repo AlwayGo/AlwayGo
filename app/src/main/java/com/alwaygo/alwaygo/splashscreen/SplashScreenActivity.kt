@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.databinding.ActivitySplashScreenBinding
 import com.alwaygo.alwaygo.extensions.setStatusBarColors
-import com.alwaygo.alwaygo.ui.signup.SignUpActivity
+import com.alwaygo.alwaygo.ui.signup.RegisterActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -34,12 +34,14 @@ class SplashScreenActivity : AppCompatActivity() {
 
         val adapter = SplashAdapter(screens)
         binding.viewPager.adapter = adapter
+        binding.viewPager.isUserInputEnabled = false
+        binding.viewPager.setPageTransformer(null)
 
         viewModel.screenIndex.observe(this) { index ->
             binding.viewPager.currentItem = index
             if (index == 2) {
                 Handler(Looper.getMainLooper()).postDelayed({
-                    startActivity(Intent(this, SignUpActivity::class.java))
+                    startActivity(Intent(this, RegisterActivity::class.java))
                     finish()
                 }, 1000)
             }
