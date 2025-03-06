@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.signup.RegisterActivity">
+    tools:context=".ui.register.RegisterFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -157,7 +157,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/signUpLiner"/>
+        app:layout_constraintTop_toBottomOf="@id/signUpLiner" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider1"
@@ -188,8 +188,8 @@
         android:fontFamily="@font/poppins_regular"
         android:text="@string/or_text_signup"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@id/divider1"
         app:layout_constraintEnd_toStartOf="@id/divider2"
+        app:layout_constraintStart_toEndOf="@id/divider1"
         app:layout_constraintTop_toBottomOf="@id/createAccountBtn" />
 
     <LinearLayout
@@ -255,6 +255,5 @@
         android:src="@drawable/square_signup_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
