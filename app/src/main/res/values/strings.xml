@@ -3,11 +3,11 @@
     <string name="alwaygo">AlwayGo</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_in">Log in</string>
-    <string name="username_signup">Username</string>  ////////   Eynidi adlari ortaq ad qoyaq
+    <string name="username_signup">Username</string>
     <string name="email_signup">Email</string>
     <string name="email_login">Email</string>
-    <string name="password_signup">Password</string>  //// Buda eynidi
-    <string name="password_login">Password</string>   ////
+    <string name="password_signup">Password</string>
+    <string name="password_login">Password</string>
     <string name="password_text">At least 8 characters, with 1 number and 1 lowercase letter (no spaces allowed)</string>
     <string name="checkBox_text">I accept the Terms and privacy policy</string>
     <string name="button_create_account">Create Account</string>

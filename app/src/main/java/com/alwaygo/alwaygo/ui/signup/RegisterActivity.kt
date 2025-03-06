@@ -21,7 +21,6 @@ import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.data.remote.model.User
 import com.alwaygo.alwaygo.databinding.ActivityRegisterBinding
 import com.alwaygo.alwaygo.extensions.setStatusBarColors
-import com.alwaygo.alwaygo.ui.login.LoginActivity
 import com.alwaygo.alwaygo.utils.UserResource
 import dagger.hilt.android.AndroidEntryPoint
 
