@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.ui.signup
+package com.alwaygo.alwaygo.ui.register
 
 import androidx.lifecycle.ViewModel
 import com.alwaygo.alwaygo.data.remote.model.User
@@ -12,27 +12,23 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RegisterViewModel @Inject constructor(
-    private val firebaseAuth: FirebaseAuth
-): ViewModel() {
+    private val firebaseAuth: FirebaseAuth,
+) : ViewModel() {
 
     private val _register = MutableStateFlow<UserResource<FirebaseUser>>(UserResource.Unspecified())
     val register: MutableStateFlow<UserResource<FirebaseUser>> = _register
 
-    fun createAccountEmailAndPassword(user: User, password: String){
+    fun createAccountEmailAndPassword(user: User, password: String) {
         runBlocking {
             _register.emit(UserResource.Loading())
         }
         firebaseAuth.createUserWithEmailAndPassword(user.email, password)
             .addOnSuccessListener {
-                it.user?.let {
-                    _register.value = UserResource.Success(it)
+                it.user?.let {firebaseUser ->
+                    _register.value = UserResource.Success(firebaseUser)
                 }
             }.addOnFailureListener {
                 _register.value = UserResource.Error(it.message.toString())
             }
     }
-
-
-
-
 }
