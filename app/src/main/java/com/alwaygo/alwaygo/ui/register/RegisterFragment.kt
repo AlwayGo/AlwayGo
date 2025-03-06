@@ -3,7 +3,11 @@ package com.alwaygo.alwaygo.ui.register
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
+import android.text.SpannableString
+import android.text.Spanned
 import android.text.TextWatcher
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,7 +39,7 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.createAccountBtn?.setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
+            findNavController().navigate(R.id.action_registerFragment_to_homeFragment)
         }
 
         binding?.apply {
@@ -106,7 +110,6 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
                         binding?.progressBar?.visibility = View.VISIBLE
                         binding?.createAccountBtn?.isEnabled = false
                     }
-
                     is UserResource.Success -> {
                         binding?.progressBar?.visibility = View.GONE
                         binding?.createAccountBtn?.isEnabled = true
@@ -115,9 +118,8 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
                             "Registration Successful!",
                             Toast.LENGTH_SHORT
                         ).show()
-                        findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
+                        findNavController().navigate(R.id.action_registerFragment_to_homeFragment)
                     }
-
                     is UserResource.Error -> {
                         binding?.progressBar?.visibility = View.GONE
                         binding?.createAccountBtn?.isEnabled = true
@@ -128,6 +130,7 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
                 }
             }
         }
+        setSignUpToLoginBtn()
     }
 
     private fun createTextWatcher(validationFunction: (String) -> Unit): TextWatcher {
@@ -139,5 +142,20 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         }
+    }
+
+    private fun setSignUpToLoginBtn() {
+        val text = getString(R.string.signup_login_text)
+        val spannableString = SpannableString(text)
+        val start = text.indexOf("Log in")
+        val end = start + "Log in".length
+        spannableString.setSpan(object : ClickableSpan() {
+            override fun onClick(widget: View) {
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            }
+        }, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        binding?.loginText?.text = spannableString
+        binding?.loginText?.movementMethod = LinkMovementMethod.getInstance()
     }
 }
