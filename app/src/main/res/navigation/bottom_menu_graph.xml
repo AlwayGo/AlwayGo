@@ -3,30 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_menu_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/homePage">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/homePage"
         android:name="com.alwaygo.alwaygo.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/categoryFragment"
+        android:id="@+id/categoryPage"
         android:name="com.alwaygo.alwaygo.ui.category.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
     <fragment
-        android:id="@+id/cardFragment"
+        android:id="@+id/cardPage"
         android:name="com.alwaygo.alwaygo.ui.card.CardFragment"
         android:label="fragment_card"
         tools:layout="@layout/fragment_card" />
     <fragment
-        android:id="@+id/favoriteFragment"
+        android:id="@+id/favoritePage"
         android:name="com.alwaygo.alwaygo.ui.favorite.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/profilePage"
         android:name="com.alwaygo.alwaygo.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />

@@ -10,6 +10,23 @@
     <string name="button_create_account">Create Account</string>
     <string name="or_text_signup">or</string>
     <string name="signup_login_text">Already have an account? <b>Login in</b></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_password_text">Reset Password</string>
+    <string name="reset_password_text2">Enter the email address you used when you joined and we’ll send you instructions to reset your password.</string>
+    <string name="enter_your_amil_address_resetpassword">Enter your amil address</string>
+    <string name="reset_password_button_text">Reset password</string>
+    <string name="remember_your_password_text">You remember your password? <b>Login in</b></string>
+    <string name="check_your_email_text">Check your email</string>
+    <string name="check_your_mail_text2">We sent a reset link to example@gmail.com enter 5 digit code that mentioned in the email</string>
+    <string name="verify_code_button_text">Verify code</string>
+    <string name="search_edittext_home">Search</string>
+    <string name="categories_text_home">Categories</string>
+    <string name="all_categories_text">All Categories</string>
+    <string name="for_you_text_home">For you</string>
+    <string name="see_more_text_home">See more</string>
+    <string name="recently_viewed_text_home">Recently viewed</string>
+    <string name="top_stores_text_home">Top Stores</string>
+    <string name="trending_now_text_home">Trending now</string>
+    <string name="best_deals_discounts_text_home">Best deals &amp; Discounts</string>
+    <string name="discover_text_home">DISCOVER</string>
+
 </resources>

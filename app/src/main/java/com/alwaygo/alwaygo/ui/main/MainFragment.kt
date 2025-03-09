@@ -25,7 +25,7 @@ class MainFragment : CoreFragment<FragmentMainBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val navHost = childFragmentManager.findFragmentById(R.id.bottomMenuContainer) as NavHostFragment
+        val navHost =childFragmentManager.findFragmentById(R.id.bottomMenuContainer) as NavHostFragment
         binding?.bottomNavigation?.setupWithNavController(navHost.navController)
     }
 }

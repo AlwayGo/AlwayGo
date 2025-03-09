@@ -35,7 +35,7 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.createAccountBtn?.setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
+//            findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
         }
 
         binding?.apply {
@@ -115,7 +115,7 @@ class RegisterFragment : CoreFragment<FragmentRegisterBinding>() {
                             "Registration Successful!",
                             Toast.LENGTH_SHORT
                         ).show()
-                        findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
+//                        findNavController().navigate(R.id.action_registerFragment_to_homeFragment2)
                     }
 
                     is UserResource.Error -> {
