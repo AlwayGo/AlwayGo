@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#313131</color>
+    <color name="background_discover">#FFFFFF</color>
+    <color name="bottom_nav_color">#000000</color>
+    <color name="bottom_nav_text_color">#FFFFFF</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="text_color_category_item">#000000</color>
+    <color name="text_color_recycler_second_text">#FFFFFF</color>
+
+</resources>

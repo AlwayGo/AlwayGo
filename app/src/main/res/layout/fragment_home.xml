@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/background"
     android:fillViewport="true"
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment"
@@ -13,83 +13,206 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/searchBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/search_button_bg"
-            android:src="@drawable/magnifier"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/searchEditText"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/poppins_regular"
-            android:hint="@string/search_edittext_home"
-            android:inputType="text"
-            android:textColorHint="@color/grey_400"
-            app:layout_constraintStart_toEndOf="@id/searchBtn"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/searchCameraBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/search_button_bg"
-            android:src="@drawable/fluent_scan_camera"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <LinearLayout
-            android:id="@+id/allCategoriesLiner"
-            android:layout_width="wrap_content"
+            android:id="@+id/searchBarLiner"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/all_categories_bg"
+            android:layout_margin="16dp"
+            android:background="@drawable/search_liner_home"
             android:orientation="horizontal"
-            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/searchEditText">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/allCategoriesBtn"
+                android:id="@+id/searchBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:src="@drawable/ic_filter" />
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/search_button_bg"
+                android:src="@drawable/magnifier" />
 
-            <TextView
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/search_edittext_home"
+                android:inputType="text"
+                android:textColorHint="@color/grey_400" />
+
+            <ImageButton
+                android:id="@+id/searchCameraBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:padding="2dp"
-                android:text="@string/all_categories_text"
-                android:textAlignment="center"
-                android:textSize="16sp" />
+                android:layout_gravity="center"
+                android:background="@drawable/search_button_bg"
+                android:src="@drawable/fluent_scan_camera" />
 
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="wrap_content"
+        <HorizontalScrollView
+            android:id="@+id/categoryScrollLiner"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintStart_toEndOf="@id/allCategoriesLiner"
-            app:layout_constraintTop_toBottomOf="@id/searchEditText"
-            tools:listitem="@layout/item_category_button" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchBarLiner">
 
-        <!-- Bannerlər (ViewPager2) -->
+            <LinearLayout
+                android:id="@+id/allCategoriesLiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <!-- Category: All categories -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/all_categories_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/all_categ_filter" />
+
+                <!-- Category: Woman -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/woman_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Man -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/man_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Kid -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/kid_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Face & Body -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/face_amp_body_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Home -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/home_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Outdoor -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/outdoor_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Accessories -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/accessories_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <!-- Category: Technology -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_item"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/technology_text_category_home"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Banner's (ViewPager2) -->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerBanners"
             android:layout_width="0dp"
@@ -97,9 +220,9 @@
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/allCategoriesLiner" />
+            app:layout_constraintTop_toBottomOf="@id/categoryScrollLiner" />
 
-        <!-- Banner üçün göstərici (TabLayout - Dots) -->
+        <!-- Banner (TabLayout - Dots) -->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayoutIndicator"
             android:layout_width="wrap_content"
@@ -109,7 +232,7 @@
             app:layout_constraintTop_toBottomOf="@id/viewPagerBanners"
             app:tabIndicatorColor="@color/black" />
 
-        <!-- Kateqoriyalar -->
+        <!-- Categories -->
         <TextView
             android:id="@+id/categoriesHeaderName"
             android:layout_width="wrap_content"
@@ -118,6 +241,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/categories_text_home"
+            android:textColor="@color/textColor"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tabLayoutIndicator" />
@@ -143,6 +267,7 @@
             android:layout_marginTop="36dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/for_you_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/recyclerViewCategories" />
@@ -197,6 +322,7 @@
             android:layout_marginTop="36dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/recently_viewed_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/specialOfferLiner" />
@@ -237,6 +363,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/top_stores_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/recentlyViewRecycler" />
@@ -264,6 +391,7 @@
             android:layout_marginTop="36dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/trending_now_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/stores_recycler" />
@@ -304,6 +432,7 @@
             android:layout_marginTop="36dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/best_deals_discounts_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/trendingNowRecycler" />
@@ -344,6 +473,7 @@
             android:layout_marginTop="36dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/discover_text_home"
+            android:textColor="@color/textColor"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bestDealsRecycler" />

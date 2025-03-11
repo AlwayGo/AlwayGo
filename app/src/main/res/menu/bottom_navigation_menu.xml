@@ -14,7 +14,7 @@
         tools:ignore="HardcodedText" />
     <item
         android:id="@+id/cardPage"
-        android:icon="@drawable/card_menu"
+        android:icon="@drawable/cart_menu"
         android:title="Card"
         tools:ignore="HardcodedText" />
     <item

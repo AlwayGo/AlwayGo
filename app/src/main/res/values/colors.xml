@@ -2,6 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="background_discover">#66000000</color>
+    <color name="bottom_nav_color">#FFFFFF</color>
+    <color name="bottom_nav_text_color">#000000</color>
+    <color name="selected">#000000</color>
+    <color name="unSelected">@color/grey_400</color>
+    <color name="textColor">#000000</color>
+    <color name="text_color_category_item">#FFFFFF</color>
+    <color name="text_color_recycler_second_text">@color/grey_400</color>
+    <color name="high_rating_green">#2A5328</color>
+
 
     // Red
     <color name="red_50">#feedee</color>

@@ -28,5 +28,19 @@
     <string name="trending_now_text_home">Trending now</string>
     <string name="best_deals_discounts_text_home">Best deals &amp; Discounts</string>
     <string name="discover_text_home">DISCOVER</string>
+    <string name="woman_text_category_home">Woman</string>
+    <string name="man_text_category_home">Man</string>
+    <string name="kid_text_category_home">Kid</string>
+    <string name="face_amp_body_text_category_home"><![CDATA[Face & Body]]></string>
+    <string name="home_text_category_home">Home</string>
+    <string name="outdoor_text_category_home">Outdoor</string>
+    <string name="accessories_text_category_home">Accessories</string>
+    <string name="technology_text_category_home">Technology</string>
+    <string name="categories_page_toolbar">CATEGORIES</string>
+    <string name="cart_page_toolbar">Cart</string>
+    <string name="select_all_text_cart">Select all</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_cart_text">Add cart</string>
 
 </resources>

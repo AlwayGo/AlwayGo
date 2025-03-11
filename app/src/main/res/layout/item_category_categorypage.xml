@@ -22,17 +22,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#66000000" />
+            android:background="#66212121" />
 
         <TextView
             android:id="@+id/categoryName"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="@font/poppins_semibold"
-            android:textAlignment="center"
-            android:textColor="@color/white"
+            android:layout_gravity="top"
+            android:textColor="@color/text_color_category_item"
             android:textSize="18sp"
             tools:text="Electronics" />
     </FrameLayout>

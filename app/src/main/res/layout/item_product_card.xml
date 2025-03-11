@@ -7,7 +7,8 @@
     android:layout_marginEnd="12dp"
     android:layout_marginBottom="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="2dp">
+    app:cardElevation="2dp"
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                tools:src="@drawable/asdf"/>
+                tools:src="@drawable/asdf" />
 
             <FrameLayout
                 android:id="@+id/favorite_button"
@@ -46,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@color/background"
             android:padding="8dp">
 
             <TextView
@@ -53,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:textColor="#000000"
+                android:textColor="@color/textColor"
                 android:textSize="14sp"
                 tools:text="Miss Murem" />
 
@@ -62,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:textColor="#99000000"
+                android:textColor="@color/text_color_recycler_second_text"
                 android:textSize="14sp"
                 tools:text="Kruvuaze Baglamali Hirka" />
 
@@ -71,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:textColor="#000000"
+                android:textColor="@color/textColor"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="35.69 ₼" />

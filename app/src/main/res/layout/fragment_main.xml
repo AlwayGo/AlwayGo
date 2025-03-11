@@ -24,6 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/nav_item_colors"
+        app:itemTextColor="@color/bottom_nav_text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

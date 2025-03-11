@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <CheckBox
+        android:id="@+id/cartCheckBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_checkbox"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/cart_product_image_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/cartCheckBox"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/cart_image_example" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivProduct"
+        app:layout_constraintTop_toTopOf="@id/ivProduct"
+        tools:text="Fakir Kaave Monoo Turk Kahve Makinesi" />
+
+    <TextView
+        android:id="@+id/tvProductVariant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvProductName"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        tools:text="Renk: Pembe" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@id/tvProductName"
+        app:layout_constraintTop_toBottomOf="@id/tvProductVariant"
+        tools:text="79.90 ₼" />
+
+    <LinearLayout
+        android:id="@+id/quantitySelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_stepper_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPrice">
+
+        <ImageButton
+            android:id="@+id/decreaseButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/cart_count_bg"
+            android:src="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            tools:text="1" />
+
+        <ImageButton
+            android:id="@+id/increaseButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/cart_count_bg"
+            android:src="@drawable/ic_plus" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
