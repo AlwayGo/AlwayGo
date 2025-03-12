@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/backgrounds/scenic" />
+            tools:src="@drawable/category_cart_example" />
 
         <View
             android:layout_width="match_parent"
@@ -31,7 +31,6 @@
             android:padding="16dp"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/poppins_semibold"
-            android:layout_gravity="top"
             android:textColor="@color/text_color_category_item"
             android:textSize="18sp"
             tools:text="Electronics" />

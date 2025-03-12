@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#FFFFFFFF</color>
+    <color name="bottom_nav_background">#FFFFFFFF</color>
     <color name="background_discover">#66000000</color>
     <color name="bottom_nav_color">#FFFFFF</color>
     <color name="bottom_nav_text_color">#000000</color>

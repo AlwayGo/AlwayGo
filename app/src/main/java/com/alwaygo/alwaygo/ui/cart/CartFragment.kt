@@ -1,10 +1,13 @@
 package com.alwaygo.alwaygo.ui.cart
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager2.widget.ViewPager2
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.core.CoreFragment
 import com.alwaygo.alwaygo.databinding.FragmentCartBinding
@@ -26,18 +29,18 @@ class CartFragment : CoreFragment<FragmentCartBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
-        val viewPager = view.findViewById<ViewPager2>(R.id.viewPager)
+        val tabLayout = binding?.tabLayout
+        val viewPager2 = binding?.viewPager
 
         val adapter = CartPagerAdapter(this)
-        viewPager.adapter = adapter
+        viewPager2?.adapter = adapter
 
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = when (position) {
-                0 -> "Last visited"
-                1 -> "Favorites"
-                else -> ""
-            }
+        val tabTitles = arrayOf("Last visited", "Favorites")
+        val tabIcons = arrayOf(R.drawable.last_visited_icon, R.drawable.favorite_menu)
+
+        TabLayoutMediator(tabLayout!!, viewPager2!!) { tab, position ->
+            tab.text = tabTitles[position]
+            tab.icon = ContextCompat.getDrawable(requireContext(), tabIcons[position])
         }.attach()
     }
 }

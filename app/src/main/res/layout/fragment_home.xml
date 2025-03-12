@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="15dp"
                 android:background="@drawable/search_button_bg"
                 android:src="@drawable/magnifier" />
 
@@ -37,8 +37,8 @@
                 android:id="@+id/searchEditText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
                 android:background="@null"
                 android:fontFamily="@font/poppins_regular"
                 android:hint="@string/search_edittext_home"
@@ -68,7 +68,6 @@
                 android:id="@+id/allCategoriesLiner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:padding="5dp">
@@ -85,8 +84,7 @@
                     android:paddingBottom="4dp"
                     android:text="@string/all_categories_text"
                     android:textColor="@color/textColor"
-                    android:textSize="14sp"
-                    app:drawableStartCompat="@drawable/all_categ_filter" />
+                    android:textSize="14sp" />
 
                 <!-- Category: Woman -->
                 <TextView
