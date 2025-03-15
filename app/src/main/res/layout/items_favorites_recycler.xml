@@ -41,11 +41,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Technoaze"
-            android:textColor="@android:color/black"
+            android:textColor="@color/textColor"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Technoaze" />
 
         <!-- Product Name -->
         <TextView
@@ -55,12 +55,12 @@
             android:ellipsize="end"
             android:fontFamily="sans-serif-medium"
             android:maxLines="2"
-            android:text="Asus VivoBook 15 X 1504ZA-Nj547W\ni5-1235U 8 Gb 512 Gb 15.6\"
-            android:textColor="@android:color/black"
+            android:textColor="@color/textColor"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_brand_name" />
+            app:layout_constraintTop_toBottomOf="@id/tv_brand_name"
+            tools:text="Asus VivoBook 15 X 1504ZA-Nj547W\ni5-1235U 8 Gb 512 Gb 15.6\" />
 
         <!-- Rating Container -->
         <LinearLayout
@@ -118,11 +118,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Free shipping"
-            android:textColor="@android:color/black"
+            android:textColor="@color/grey_400"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/container_rating" />
+            app:layout_constraintTop_toBottomOf="@id/container_rating"
+            tools:text="Free shipping" />
 
         <!-- Price -->
         <TextView
@@ -130,13 +130,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="1579 ₼"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_shipping_info" />
+            app:layout_constraintTop_toBottomOf="@id/tv_shipping_info"
+            tools:text="1579 ₼" />
 
         <!-- Buttons Container -->
         <LinearLayout
