@@ -3,5 +3,5 @@
     <!-- Selected -->
     <item android:color="@color/selected" android:state_checked="true" />
     <!-- Default (unselected) -->
-    <item android:color="@color/unSelected" android:state_checked="false" />
+    <item android:color="@color/unSelected" />
 </selector>

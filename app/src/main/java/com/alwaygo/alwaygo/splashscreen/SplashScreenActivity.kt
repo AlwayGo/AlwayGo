@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.databinding.ActivitySplashScreenBinding
 import com.alwaygo.alwaygo.extensions.setStatusBarColors
-import com.alwaygo.alwaygo.ui.MainActivity
+import com.alwaygo.alwaygo.screens.MainActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/homePage"
-        android:name="com.alwaygo.alwaygo.ui.home.HomeFragment"
+        android:name="com.alwaygo.alwaygo.screens.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/categoryPage"
-        android:name="com.alwaygo.alwaygo.ui.category.CategoryFragment"
+        android:name="com.alwaygo.alwaygo.screens.category.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
     <fragment
         android:id="@+id/cardPage"
-        android:name="com.alwaygo.alwaygo.ui.cart.CartFragment"
+        android:name="com.alwaygo.alwaygo.screens.cart.CartFragment"
         android:label="fragment_card"
         tools:layout="@layout/fragment_cart" />
     <fragment
         android:id="@+id/favoritePage"
-        android:name="com.alwaygo.alwaygo.ui.favorite.FavoriteFragment"
+        android:name="com.alwaygo.alwaygo.screens.favorite.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/profilePage"
-        android:name="com.alwaygo.alwaygo.ui.profile.ProfileFragment"
+        android:name="com.alwaygo.alwaygo.screens.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

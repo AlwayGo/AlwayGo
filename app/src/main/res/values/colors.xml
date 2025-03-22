@@ -7,12 +7,11 @@
     <color name="background_discover">#66000000</color>
     <color name="bottom_nav_color">#FFFFFF</color>
     <color name="bottom_nav_text_color">#000000</color>
-    <color name="selected">#000000</color>
-    <color name="unSelected">@color/grey_400</color>
     <color name="textColor">#000000</color>
     <color name="text_color_category_item">#FFFFFF</color>
     <color name="text_color_recycler_second_text">@color/grey_400</color>
     <color name="high_rating_green">#2A5328</color>
+    <color name="transparent">#00FFFFFF</color>
 
 
     // Red
@@ -63,10 +62,18 @@
     <color name="orange_800">#8c7111</color>
     <color name="orange_900">#6b570d</color>
 
+    // Navigation
+    <color name="selected">#000000</color>
+    <color name="unSelected">@color/grey_400</color>
+    
+    // TabLayout
+    <color name="text_selected_color">#000000</color>
+    <color name="text_unselected_color">#000000</color>
+    <color name="icon_selected_color">#3f5c7e</color>
+    <color name="icon_unselected_color">#000000</color>
+
     <color name="category_border">#CC45658B</color> <!-- rgba(69,101,139,0.8) -->
     <color name="category_text">#DE000000</color> <!-- rgba(0,0,0,0.87) -->
     <color name="category_active">#45658B</color> <!-- Seçilmiş düymənin rəngi -->
-
-    <color name="transparent">#00FFFFFF</color>
 
 </resources>
