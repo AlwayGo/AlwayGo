@@ -16,9 +16,9 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
     <fragment
-        android:id="@+id/cardPage"
+        android:id="@+id/cartPage"
         android:name="com.alwaygo.alwaygo.screens.cart.CartFragment"
-        android:label="fragment_card"
+        android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
     <fragment
         android:id="@+id/favoritePage"
