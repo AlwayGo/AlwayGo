@@ -44,5 +44,14 @@
     <string name="add_cart_text">Add cart</string>
     <string name="favorites_toolbar_text">FAVORITES</string>
     <string name="recently_added_favorites_text">Recently Added</string>
+    <string name="set_a_new_password">Set a new password</string>
+    <string name="set_a_new_password_text2">Create a new password. Ensure it differs from previous ones for security</string>
+    <string name="enter_you_new_password">Enter you new password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update_password">Update password</string>
+    <string name="password_reset">Password reset !</string>
+    <string name="password_reset_text2">Your password has been successfully reset. Click confirm to set a new password</string>
+    <string name="confirm_and_back_to_login">Confirm and back to login</string>
+
 
 </resources>

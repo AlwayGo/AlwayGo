@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.alwaygo.alwaygo.data.remote.model.Product
 import com.alwaygo.alwaygo.databinding.ItemProductCardBinding
 import com.bumptech.glide.Glide
 

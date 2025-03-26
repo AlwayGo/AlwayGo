@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Alt xətt üçün bir forma -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- Yalnız alt hissədə xətt əlavə edirik -->
+    <item android:top="60dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/grey_300"/> <!-- Xəttin rəngi -->
+            <size android:height="0.5dp"/> <!-- Xəttin qalınlığı -->
+        </shape>
+    </item>
+
+</layer-list>
