@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.splashscreen
+package com.alwaygo.alwaygo.screens.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -13,12 +13,12 @@ class SplashAdapter(private val layouts: List<Int>):
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
-    ): SplashAdapter.SplashViewHolder {
+    ): SplashViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(viewType, parent, false)
         return SplashViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: SplashAdapter.SplashViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SplashViewHolder, position: Int) {
     }
 
     override fun getItemCount(): Int {

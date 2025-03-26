@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.screens.cart
+package com.alwaygo.alwaygo.screens.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

@@ -1,6 +1,5 @@
 package com.alwaygo.alwaygo.screens.cart
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,18 +7,19 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.core.CoreFragment
-import com.alwaygo.alwaygo.databinding.FragmentCartBinding
+import com.alwaygo.alwaygo.databinding.FragmentCardBinding
+import com.alwaygo.alwaygo.screens.adapter.CartPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class CartFragment : CoreFragment<FragmentCartBinding>() {
+class CartFragment : CoreFragment<FragmentCardBinding>() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentCartBinding.inflate(inflater, container, false)
+        binding = FragmentCardBinding.inflate(inflater, container, false)
         return binding?.root
     }
 

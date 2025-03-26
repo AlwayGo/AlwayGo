@@ -18,8 +18,6 @@
             android:layout_height="wrap_content"
             tools:src="@drawable/example_image"/>
 
-
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>
