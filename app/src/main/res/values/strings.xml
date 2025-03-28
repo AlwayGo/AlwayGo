@@ -52,6 +52,24 @@
     <string name="password_reset">Password reset !</string>
     <string name="password_reset_text2">Your password has been successfully reset. Click confirm to set a new password</string>
     <string name="confirm_and_back_to_login">Confirm and back to login</string>
+    <string name="hi_default_name">Hi, Gulta</string>
+    <string name="default_email">psjshdh@privaterelay.appleid.com</string>
+    <string name="add_number">Add Number</string>
+    <string name="add_number_text2">Add your phone number now to enjoy the best\n shopping experience.</string>
+    <string name="all_orders">All orders</string>
+    <string name="reviews">Reviews</string>
+    <string name="for_you">For you</string>
+    <string name="recent">Recent</string>
+    <string name="profile_details">Profile details</string>
+    <string name="address_book">Address book</string>
+    <string name="payment_methods">Payment methods</string>
+    <string name="security_and_privacy">Security and privacy</string>
+    <string name="notifications">Notifications</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_preferences">Contact preferences</string>
+    <string name="gift_cards_and_vouchers">Gift cards and vouchers</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="sign_out">Sign out</string>
 
 
 </resources>

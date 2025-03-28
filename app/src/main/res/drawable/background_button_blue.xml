@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kliklənəndə rəng dəyişəcək -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#44648A"/> <!-- Daha tünd mavi -->
+            <corners android:radius="16dp"/> <!-- Yumru künclər -->
+        </shape>
+    </item>
+
+    <!-- Normal vəziyyət -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#44648A"/> <!-- Normal mavi -->
+            <corners android:radius="16dp"/> <!-- Yumru künclər -->
+        </shape>
+    </item>
+</selector>
