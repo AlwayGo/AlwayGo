@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.screens.register
+package com.alwaygo.alwaygo.screens.login_register
 
 import android.os.Bundle
 import android.view.LayoutInflater

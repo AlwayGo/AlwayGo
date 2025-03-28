@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".screens.register.CheckMailFragment">
+    tools:context=".screens.login_register.CheckMailFragment">
 
     <ImageButton
         android:id="@+id/backToResetPasswordFragmentBtn"
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/check_your_mail_text2"
             android:textColor="@color/grey_300"
             android:textSize="16sp" />
@@ -161,7 +161,7 @@
         android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:backgroundTint="@color/blue_500"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppins_medium"
         android:text="@string/verify_code_button_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

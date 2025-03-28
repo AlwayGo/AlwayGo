@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.alwaygo.alwaygo.data.remote.model.Product
-import com.alwaygo.alwaygo.databinding.ItemProductCardBinding
+import com.alwaygo.alwaygo.databinding.ItemProductCartBinding
 import com.bumptech.glide.Glide
 
 class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductViewHolder>(DiffCallback()) {
 
-    class ProductViewHolder(private val binding: ItemProductCardBinding) :
+    class ProductViewHolder(private val binding: ItemProductCartBinding) :
         RecyclerView.ViewHolder(binding.root) {
         @SuppressLint("SetTextI18n")
         fun bind(product: Product) {
@@ -25,7 +25,7 @@ class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductViewHolder>(Di
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
-        val binding = ItemProductCardBinding.inflate(
+        val binding = ItemProductCartBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false

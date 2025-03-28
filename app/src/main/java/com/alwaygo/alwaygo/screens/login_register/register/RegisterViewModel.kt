@@ -1,4 +1,4 @@
-package com.alwaygo.alwaygo.screens.register
+package com.alwaygo.alwaygo.screens.login_register.register
 
 import androidx.lifecycle.ViewModel
 import com.alwaygo.alwaygo.data.remote.model.User

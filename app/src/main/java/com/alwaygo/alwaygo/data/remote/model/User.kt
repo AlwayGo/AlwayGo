@@ -5,20 +5,22 @@ package com.alwaygo.alwaygo.data.remote.model
 data class User(
     var username: String,
     var email: String,
-    var password: String
-){
+    var password: String,
+) {
 
-    constructor(): this("", "", "")
+    constructor() : this("", "", "")
 }
 
 data class Product(
     val id: Int,
     val name: String,
     val price: Double,
-    val imageUrl: String
+    val imageUrl: String,
 )
 
 data class Category(
     val id: Int,
-    val name: String
+    val name: String,
 )
+
+
