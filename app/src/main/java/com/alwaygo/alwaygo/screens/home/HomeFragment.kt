@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alwaygo.alwaygo.R
 import com.alwaygo.alwaygo.core.CoreFragment
-import com.alwaygo.alwaygo.extensions.navigateFromParent
 import com.alwaygo.alwaygo.databinding.FragmentHomeBinding
 import com.alwaygo.alwaygo.screens.adapter.CategoryAdapter
 import com.alwaygo.alwaygo.screens.adapter.ProductAdapter
