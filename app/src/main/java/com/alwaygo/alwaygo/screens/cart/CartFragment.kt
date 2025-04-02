@@ -53,7 +53,6 @@ class CartFragment : CoreFragment<FragmentCartBinding>() {
             )
             tabLayout.tabIconTint =
                 ContextCompat.getColorStateList(requireContext(), R.color.tab_icon_color)
-
         }
     }
 

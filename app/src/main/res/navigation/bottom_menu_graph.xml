@@ -16,11 +16,6 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
     <fragment
-        android:id="@+id/cartPage"
-        android:name="com.alwaygo.alwaygo.screens.cart.CartFragment"
-        android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
-    <fragment
         android:id="@+id/favoritePage"
         android:name="com.alwaygo.alwaygo.screens.favorite.FavoriteFragment"
         android:label="fragment_favorite"
@@ -30,4 +25,9 @@
         android:name="com.alwaygo.alwaygo.screens.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cartPage"
+        android:name="com.alwaygo.alwaygo.screens.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
 </navigation>
