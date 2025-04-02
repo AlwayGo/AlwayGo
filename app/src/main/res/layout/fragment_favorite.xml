@@ -44,12 +44,12 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All items" />
+            android:text="@string/all_items_favorite_page" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Boards" />
+            android:text="@string/boards_tv_favorite_page" />
     </com.google.android.material.tabs.TabLayout>
 
     <!-- ViewPager for Tabs -->

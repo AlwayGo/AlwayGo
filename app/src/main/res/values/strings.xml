@@ -71,5 +71,19 @@
     <string name="password_reset_text2">You pasword has been successfully reset. Click confirm to set a new password.</string>
     <string name="set_a_new_password_text2">Create a new password. Ensure it differs from previous ones for security.</string>
     <string name="enter_you_new_password">Enter you new password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color_text_product_page">Color</string>
+    <string name="size_tv_product_page">Size</string>
+    <string name="features_tv_product_page">Features</string>
+    <string name="reviews_tv_product_page">Reviews</string>
+    <string name="overview_and_videos_tv_product_page">Overview and Videos</string>
+    <string name="photo_tv_product_page">Photo</string>
+    <string name="checkout_tv_product_page">Checkout</string>
+    <string name="all_items_favorite_page">All items</string>
+    <string name="boards_tv_favorite_page">Boards</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="add_bag">Add bag</string>
+    <string name="size">Size</string>
 
 </resources>
