@@ -39,7 +39,6 @@
     <string name="categories_page_toolbar">CATEGORIES</string>
     <string name="cart_page_toolbar">Cart</string>
     <string name="select_all_text_cart">Select all</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_cart_text">Add cart</string>
     <string name="favorites_toolbar_text">FAVORITES</string>
@@ -52,5 +51,29 @@
     <string name="password_reset">Password reset !</string>
     <string name="you_password_has_been_successfully_reset_click_confirm_to_set_a_new_password">You password has been successfully reset. Click confirm to set a new password</string>
     <string name="confirm_and_back_to_login">Confirm and back to login</string>
-
+    <string name="hi_default_name">Hi, Gulta</string>
+    <string name="default_email">psjshdh@privaterelay.appleid.com</string>
+    <string name="add_number">Add Number</string>
+    <string name="add_number_text2">Add your phone number now to enjoy the best\n shopping experience.</string>
+    <string name="all_orders">All orders</string>
+    <string name="reviews">Reviews</string>
+    <string name="for_you">For you</string>
+    <string name="recent">Recent</string>
+    <string name="profile_details">Profile details</string>
+    <string name="address_book">Address book</string>
+    <string name="payment_methods">Payment methods</string>
+    <string name="security_and_privacy">Security and privacy</string>
+    <string name="notifications">Notifications</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_preferences">Contact preferences</string>
+    <string name="gift_cards_and_vouchers">Gift cards and vouchers</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="sign_out">Sign out</string>
+    <string name="Woman_Categories">Woman / Categories</string>
+    <string name="All_woman">All woman</string>
+    <string name="New_in">New in</string>
+    <string name="Clothing">Clothing</string>
+    <string name="Shoes">Shoes</string>
+    <string name="Bag">Bag</string>
+    <string name="Accessories">Accessories</string>
 </resources>
