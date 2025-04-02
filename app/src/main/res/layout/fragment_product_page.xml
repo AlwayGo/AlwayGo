@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".screens.home.ProductPageFragment">
 
     <!-- Scrollable content -->
     <androidx.core.widget.NestedScrollView
@@ -35,8 +36,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:background="@color/transparent"
-                android:padding="10dp"
                 android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
                 android:src="@drawable/back_icon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -81,9 +83,9 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="18dp"
                 app:dotsClickable="true"
+                app:layout_constraintBottom_toBottomOf="@id/productImagePager"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="@id/productImagePager"/>
+                app:layout_constraintStart_toStartOf="parent" />
 
             <!-- 4K Likes Badge -->
             <TextView
@@ -109,13 +111,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Hair dryer Dyson HD07"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/stockIndicator"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/productImagePager" />
+                app:layout_constraintTop_toBottomOf="@+id/productImagePager"
+                tools:text="Hair dryer Dyson HD07" />
 
             <!-- Stock Indicator -->
             <TextView
@@ -137,11 +139,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
-                android:text="NICKEL PINK"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/productTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/productTitle"
+                tools:text="NICKEL PINK" />
 
             <!-- Rating -->
             <LinearLayout
@@ -193,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Color"
+                android:text="@string/color_text_product_page"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -245,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Size"
+                android:text="@string/size_tv_product_page"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -257,12 +259,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="Standart"
                 android:textColor="#808080"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/sizeLabel"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/sizeLabel" />
+                app:layout_constraintTop_toTopOf="@+id/sizeLabel"
+                tools:text="Standart" />
 
             <!-- Product Description -->
             <TextView
@@ -273,8 +275,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:lineSpacingExtra="4dp"
-                android:textColor="#505050"
+                android:textColor="@color/textColor"
                 android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sizeLabel"
                 tools:text="Intelligent heat control helps protect your hair's natural shine. Powered by a powerful Dyson digital motor V9, spinning at up to 110,000rpm. With Air Multiplier™ technology to produce a high-pressure jet of controlled air, for fast drying and precision styling." />
 
@@ -291,7 +295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Features"
+                    android:text="@string/features_tv_product_page"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -330,7 +334,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Reviews"
+                    android:text="@string/reviews_tv_product_page"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -369,7 +373,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Overview and Videos"
+                    android:text="@string/overview_and_videos_tv_product_page"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -408,7 +412,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Photo"
+                    android:text="@string/photo_tv_product_page"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -472,14 +476,15 @@
                 tools:text="Free shipping" />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/checkoutButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:backgroundTint="#B0BEC5"
-            android:text="Checkout"
+            android:background="@drawable/button_outline_bg"
+            android:text="@string/checkout_tv_product_page"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -492,7 +497,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#3A59A6"
-            android:text="Add bag"
+            android:text="@string/add_bag"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"

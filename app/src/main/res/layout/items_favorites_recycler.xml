@@ -163,7 +163,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="13dp"
                 android:paddingBottom="8dp"
-                android:text="Size"
+                android:text="@string/size"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
@@ -179,7 +179,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="24dp"
                 android:paddingBottom="8dp"
-                android:text="Add to cart"
+                android:text="@string/add_to_cart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
