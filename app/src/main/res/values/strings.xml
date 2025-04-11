@@ -39,6 +39,7 @@
     <string name="categories_page_toolbar">CATEGORIES</string>
     <string name="cart_page_toolbar">Cart</string>
     <string name="select_all_text_cart">Select all</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_cart_text">Add cart</string>
     <string name="favorites_toolbar_text">FAVORITES</string>
     <string name="recently_added_favorites_text">Recently Added</string>
@@ -50,14 +51,14 @@
     <string name="password_reset">Password reset !</string>
     <string name="you_password_has_been_successfully_reset_click_confirm_to_set_a_new_password">You password has been successfully reset. Click confirm to set a new password</string>
     <string name="confirm_and_back_to_login">Confirm and back to login</string>
-    <string name="hi_default_name">Hi, default name</string>
-    <string name="default_email">deafut@gmail.com</string>
-    <string name="add_number_text2">Add your phone number now to enjoy the best shopping experience.</string>
-    <string name="add_number">Add number</string>
+    <string name="hi_default_name">Hi, Gulta</string>
+    <string name="default_email">psjshdh@privaterelay.appleid.com</string>
+    <string name="add_number">Add Number</string>
+    <string name="add_number_text2">Add your phone number now to enjoy the best\n shopping experience.</string>
     <string name="all_orders">All orders</string>
     <string name="reviews">Reviews</string>
     <string name="for_you">For you</string>
-    <string name="recent">Recents</string>
+    <string name="recent">Recent</string>
     <string name="profile_details">Profile details</string>
     <string name="address_book">Address book</string>
     <string name="payment_methods">Payment methods</string>
@@ -65,25 +66,14 @@
     <string name="notifications">Notifications</string>
     <string name="faq">FAQ</string>
     <string name="contact_preferences">Contact preferences</string>
-    <string name="gift_cards_and_vouchers"><![CDATA[Gif cards & vouchers]]></string>
+    <string name="gift_cards_and_vouchers">Gift cards and vouchers</string>
     <string name="rate_this_app">Rate this app</string>
     <string name="sign_out">Sign out</string>
-    <string name="password_reset_text2">You pasword has been successfully reset. Click confirm to set a new password.</string>
-    <string name="set_a_new_password_text2">Create a new password. Ensure it differs from previous ones for security.</string>
-    <string name="enter_you_new_password">Enter you new password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="color_text_product_page">Color</string>
-    <string name="size_tv_product_page">Size</string>
-    <string name="features_tv_product_page">Features</string>
-    <string name="reviews_tv_product_page">Reviews</string>
-    <string name="overview_and_videos_tv_product_page">Overview and Videos</string>
-    <string name="photo_tv_product_page">Photo</string>
-    <string name="checkout_tv_product_page">Checkout</string>
-    <string name="all_items_favorite_page">All items</string>
-    <string name="boards_tv_favorite_page">Boards</string>
-    <string name="add_to_cart">Add to cart</string>
-    <string name="add_bag">Add bag</string>
-    <string name="size">Size</string>
-
+    <string name="Woman_Categories">Woman / Categories</string>
+    <string name="All_woman">All woman</string>
+    <string name="New_in">New in</string>
+    <string name="Clothing">Clothing</string>
+    <string name="Shoes">Shoes</string>
+    <string name="Bag">Bag</string>
+    <string name="Accessories">Accessories</string>
 </resources>
