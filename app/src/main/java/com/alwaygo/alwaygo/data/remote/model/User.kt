@@ -1,6 +1,5 @@
 package com.alwaygo.alwaygo.data.remote.model
 
-
 //Login
 data class User(
     var username: String,

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/allWomanPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/all_woman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/allWomanTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/All_woman"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/allWomanPic"
+        app:layout_constraintStart_toEndOf="@id/allWomanPic"
+        app:layout_constraintTop_toTopOf="@id/allWomanPic" />
+
+    <ImageView
+        android:id="@+id/newInPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/new_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allWomanPic" />
+
+
+    <TextView
+        android:id="@+id/newInTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/New_in"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/newInPic"
+        app:layout_constraintStart_toEndOf="@id/newInPic"
+        app:layout_constraintTop_toTopOf="@id/newInPic" />
+
+    <ImageView
+        android:id="@+id/clothingIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/clothing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newInPic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/Clothing"
+        app:layout_constraintBottom_toBottomOf="@id/clothingIv"
+        app:layout_constraintStart_toEndOf="@id/clothingIv"
+        app:layout_constraintTop_toTopOf="@id/clothingIv" />
+
+    <ImageView
+        android:id="@+id/toClothingPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/enter_arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@id/clothingIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/clothingIv" />
+
+    <ImageView
+        android:id="@+id/shoesIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/shoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clothingIv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/Shoes"
+        app:layout_constraintBottom_toBottomOf="@id/shoesIv"
+        app:layout_constraintStart_toEndOf="@id/shoesIv"
+        app:layout_constraintTop_toTopOf="@id/shoesIv" />
+
+    <ImageView
+        android:id="@+id/toShoesPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/enter_arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@id/shoesIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/shoesIv" />
+
+
+    <ImageView
+        android:id="@+id/bagIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shoesIv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/Bag"
+        app:layout_constraintBottom_toBottomOf="@id/bagIv"
+        app:layout_constraintStart_toEndOf="@id/bagIv"
+        app:layout_constraintTop_toTopOf="@id/bagIv" />
+
+    <ImageView
+        android:id="@+id/toBagPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/enter_arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@id/bagIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bagIv" />
+
+    <ImageView
+        android:id="@+id/accessoriesIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/accessories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bagIv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/Accessories"
+        app:layout_constraintBottom_toBottomOf="@id/accessoriesIv"
+        app:layout_constraintStart_toEndOf="@id/accessoriesIv"
+        app:layout_constraintTop_toTopOf="@id/accessoriesIv" />
+
+    <ImageView
+        android:id="@+id/toAccessoriesPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/enter_arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@id/accessoriesIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/accessoriesIv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

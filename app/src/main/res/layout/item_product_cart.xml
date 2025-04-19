@@ -41,6 +41,22 @@
                     android:src="@drawable/favorite_icon"
                     app:tint="#000000" />
             </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/add_bag_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="8dp"
+                android:background="@drawable/like_button_bg">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bag_icon"
+                    app:tint="#000000" />
+            </FrameLayout>
         </FrameLayout>
 
         <LinearLayout
