@@ -76,4 +76,15 @@
     <string name="Shoes">Shoes</string>
     <string name="Bag">Bag</string>
     <string name="Accessories">Accessories</string>
+    <string name="color_text_product_page">Color</string>
+    <string name="size_tv_product_page">Size</string>
+    <string name="features_tv_product_page">Features</string>
+    <string name="reviews_tv_product_page">Reviews</string>
+    <string name="overview_and_videos_tv_product_page">Overview and videos</string>
+    <string name="photo_tv_product_page">Photos</string>
+    <string name="checkout_tv_product_page">Checkout</string>
+    <string name="add_bag">Add bag</string>
+    <string name="reviews_product_page">Reviews</string>
+    <string name="see_all_product_page"><![CDATA[See all >]]></string>
+    <string name="shipping_info_tv_product_page">Shipping info</string>
 </resources>
